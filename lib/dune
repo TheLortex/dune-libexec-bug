@@ -1,0 +1,5 @@
+(rule
+ (target host-config)
+ (action (with-stdout-to %{target}
+  (run cat %{libexec:my-host-library:config})))
+)

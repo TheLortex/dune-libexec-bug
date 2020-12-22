@@ -1,0 +1,8 @@
+(library 
+ (name my_host_library)
+ (enabled_if (= %{context_name} host))
+ (public_name my-host-library))
+
+(install
+ (section lib)
+ (files config))

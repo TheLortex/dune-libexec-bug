@@ -1,0 +1,9 @@
+(lang dune 2.0)
+
+(context (default
+ (name host)))
+
+(context (default 
+ (name target)
+ (host host))
+)
